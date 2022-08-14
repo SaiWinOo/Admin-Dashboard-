@@ -1,0 +1,133 @@
+
+:root{
+    --primary-soft:#f3f3f3;
+}
+.content{
+    background-color: var(--primary-soft);
+    overflow-y: scroll;
+}
+
+.sidebar{
+    overflow-y: scroll;
+}
+.nav-brand{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.card{
+    border: none;
+}
+.status-card{
+    transition: 0.5s;
+}
+.ov-img{
+    margin-left: -25px;
+}
+.status-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.status-card:active{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.header{
+    position: sticky;
+    top:0.2rem;
+    z-index: 2000;
+}
+.user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.show-side-bar-btn{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .sidebar{
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        display: block !important;
+        background: #f9f9f9;
+        margin-left: -100%;
+    }
+    .item-carosel-card{
+        margin-top: 100px;
+    }
+}
+.item-carosel{
+    margin-top: -100px;
+}
+
+.item-card-img{
+    height: 180px;
+}
+.sub-list tr{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sub-list tr:active{
+    transform: scale(1.02);
+}
+
+.item-img-width{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.full-screen-btn{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 2005;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-menu{
+    font-size: 25px;
+}
+.nav-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-title{
+    padding: 10px 0;
+}
+.menu-item{
+    transition: 0.3s;
+    margin-top: 5px;
+}
+.menu-item:hover{
+    background-color: #e7e7e7;
+    border-radius: 10px;
+}
+.menu-item-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+.menu-item-link:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item span{
+
+}
+.menu-item i{
+
+}
+.menu-spacer{
+    padding: 15px 0;
+}
+
+
